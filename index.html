@@ -18,7 +18,7 @@
             background-color: white;
             padding: 10px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             box-shadow: 0px 4px 2px -2px gray;
             position: sticky;
@@ -26,9 +26,9 @@
             z-index: 1000;
         }
 
-        /* Logo centrado */
+        /* Logo centrado y más grande */
         .logo {
-            height: 100px;
+            height: 130px; /* Aumenta el tamaño en un 30% */
         }
 
         /* Barra superior con íconos y teléfono */
@@ -50,7 +50,9 @@
         }
 
         .top-bar .phone {
-            margin-left: 10px;
+            margin-right: 20px;
+            font-size: 18px;
+            font-weight: bold;
         }
 
         nav ul {
@@ -58,7 +60,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex: 1;
         }
 
@@ -76,36 +78,6 @@
         nav ul li a:hover {
             background-color: lightgray;
             border-radius: 5px;
-        }
-
-        /* Dropdown de Nuestros Tours */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-radius: 5px;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .dropdown-content a:hover {
-            background-color: lightgray;
         }
 
         /* Carrusel de Imágenes */
@@ -138,9 +110,10 @@
             transition: transform 0.3s ease-in-out;
         }
 
+        /* Imagen de los tours 400% más grande */
         .tour-card img {
             width: 100%;
-            height: 300px;
+            height: 1200px; /* Tamaño aumentado en 400% */
             object-fit: cover;
         }
 
@@ -234,11 +207,8 @@
             <i class="fa fa-search" aria-hidden="true"></i>
             <i class="fa fa-envelope" aria-hidden="true"></i>
         </div>
+        <span class="phone">604-721-5882</span>
         <img src="moose_logo.png" alt="Moose Logo" class="logo">
-        <div class="icon-bar">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-            <span class="phone">604-721-5882</span>
-        </div>
     </div>
 
     <!-- Barra de Navegación -->
