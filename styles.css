@@ -12,7 +12,7 @@ header {
     text-align: center;
 }
 
-header img {
+header .logo {
     width: 150px; /* Tamaño del logo */
     vertical-align: middle;
 }
@@ -34,6 +34,36 @@ nav ul li a {
 
 main {
     padding: 20px;
+}
+
+.tour-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tour-card {
+    display: block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(100% / 2 - 20px); /* Dos columnas en pantallas grandes */
+    box-sizing: border-box;
+}
+
+.tour-card img {
+    width: 100%;
+    height: auto;
+}
+
+.tour-info {
+    padding: 10px;
+}
+
+.tour-info h3 {
+    margin: 0;
 }
 
 .contact-form {
@@ -75,4 +105,11 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .tour-card {
+        width: calc(100% - 20px); /* Una columna en pantallas pequeñas */
+    }
 }
