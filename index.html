@@ -4,133 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moose Adventure Tours LTD</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header img {
-            width: 50px;
-            vertical-align: middle;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .language-switch {
-            margin-top: 10px;
-        }
-        section {
-            margin: 20px;
-            <section id="contact">
-    <h2>Contacto</h2>
-    <div class="contact-form">
-        <form action="https://formspree.io/f/{form_id}" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-</section>
-
-        }
-        .tour {
-            background-color: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .tour h2 {
-            color: #2c3e50;
-        }
-        footer {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .contact-form {
-            margin-top: 20px;
-        }
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            background-color: #2c3e50;
-            color: white;
-            border: none;
-            padding: 10px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .contact-form button:hover {
-            background-color: #34495e;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <img src="moose_logo.png" alt="Moose Logo"style=width: 300px>
+        <img src="moose_logo.png" alt="Moose Logo">
         <h1>Moose Adventure Tours LTD</h1>
         <nav>
-            <a href="#tours">Tours</a>
-            <a href="#contact">Contacto</a>
+            <ul>
+                <li><a href="tour-whistler.html">Roadtrip a Whistler</a></li>
+                <li><a href="tour-bowen.html">Roadtrip a Bowen Island</a></li>
+                <li><a href="tour-city.html">Tour de Ciudad</a></li>
+                <li><a href="tour-north.html">Tour de North Vancouver</a></li>
+                <li><a href="tour-victoria.html">Roadtrip a Victoria</a></li>
+            </ul>
         </nav>
-        <div class="language-switch">
-            <a href="index_en.html">English</a> | <a href="index.html">Español</a>
-        </div>
     </header>
 
-    <section id="tours">
-        <h2>Nuestros Tours</h2>
-        <div class="tour">
-            <h2><a href="tour_whistler.html">Roadtrip a Whistler</a></h2>
-            <p>Descripción breve del tour.</p>
-        </div>
-        <div class="tour">
-            <h2><a href="tour_bowen.html">Roadtrip a Bowen Island</a></h2>
-            <p>Descripción breve del tour.</p>
-        </div>
-        <div class="tour">
-            <h2><a href="tour_city.html">Tour de Ciudad</a></h2>
-            <p>Descripción breve del tour.</p>
-        </div>
-        <div class="tour">
-            <h2><a href="tour_north_vancouver.html">Tour de North Vancouver</a></h2>
-            <p>Descripción breve del tour.</p>
-        </div>
-        <div class="tour">
-            <h2><a href="tour_victoria.html">Roadtrip a Victoria</a></h2>
-            <p>Descripción breve del tour.</p>
-        </div>
-    </section>
+    <main>
+        <h2>Bienvenido a Moose Adventure Tours</h2>
+        <p>Explora nuestros emocionantes tours en Vancouver y más allá.</p>
+    </main>
 
     <section id="contact">
         <h2>Contacto</h2>
         <div class="contact-form">
-            <form action="mailto:mooseadventuretours.com" method="post" enctype="text/plain">
+            <form action="https://formspree.io/f/{form_id}" method="POST">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Correo Electrónico:</label>
@@ -141,46 +40,6 @@
             </form>
         </div>
     </section>
-
-    <footer>
-        <p>Contacto: 6047215882 | Correo: mooseadventuretours.com</p>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moose Adventure Tours LTD</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        header img {
-            width: 50px;
-            vertical-align: middle;
-        }
-        /* Otros estilos aquí */
-    </style>
-</head>
-<body>
-   <header>
-    <img src="moose_logo.png" alt="Moose Logo" style="width: 150px;">
-    <h1>Moose Adventure Tours LTD</h1>
-</header>
-
-
-    <!-- Contenido de la página aquí -->
 
     <footer>
         <p>Contacto: 6047215882 | Correo: mooseadventuretours.com</p>
